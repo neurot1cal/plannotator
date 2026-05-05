@@ -9,14 +9,17 @@
     "./components/plan-diff/*": "./components/plan-diff/*.tsx",
     "./utils/*": "./utils/*.ts",
     "./hooks/*": "./hooks/*.ts",
+    "./shortcuts": "./shortcuts/index.ts",
     "./config": "./config/index.ts",
     "./types": "./types.ts",
     "./theme": "./theme.css"
   },
   "dependencies": {
+    "@pierre/diffs": "^1.1.12",
     "@plannotator/shared": "workspace:*",
     "@plannotator/web-highlighter": "^0.8.1",
     "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-popover": "^1.1.15",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tanstack/react-table": "^8.21.3",
     "@viz-js/viz": "^3.25.0",

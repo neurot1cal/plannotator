@@ -63,6 +63,13 @@ plannotator/
 │   │   │   ├── plan-diff/        # PlanDiffBadge, PlanDiffViewer, clean/raw diff views
 │   │   │   ├── sidebar/          # SidebarContainer, SidebarTabs, VersionBrowser, ArchiveBrowser
 │   │   │   └── collab/           # RoomStatusBadge, ParticipantAvatars, RoomHeaderControls, RoomMenu, RoomUnavailableScreen, JoinRoomGate, StartRoomModal, RemoteCursorLayer, ImageStripNotice
+│   │   ├── shortcuts/            # Keyboard shortcut registry
+│   │   │   ├── core.ts           # Engine: parser, formatter, dispatcher, validator
+│   │   │   ├── runtime.ts        # Engine: useShortcutScope, useDoubleTapShortcuts hooks
+│   │   │   ├── index.ts          # Barrel — re-exports engine + scopes from both subfolders
+│   │   │   ├── plan-review/      # Scopes for plan-editor surfaces
+│   │   │   └── code-review/      # Scopes for review-editor surfaces
+│   │   ├── shortcuts.test.ts     # Registry unit tests (parser, dispatcher, validator)
 │   │   ├── utils/                # parser.ts, sharing.ts, storage.ts, planSave.ts, agentSwitch.ts, planDiffEngine.ts, planAgentInstructions.ts, adminSecretStorage.ts, blockTargeting.ts
 │   │   ├── hooks/                # useAnnotationHighlighter.ts, useSharing.ts, usePlanDiff.ts, useSidebar.ts, useLinkedDoc.ts, useAnnotationDraft.ts, useCodeAnnotationDraft.ts, useArchive.ts, useCollabRoom.ts, useCollabRoomSession.ts, useAnnotationController.ts, useRoomMode.ts, usePresenceThrottle.ts
 │   │   └── types.ts
